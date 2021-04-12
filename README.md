@@ -7,12 +7,12 @@
 ###### Step by Step
 
 #1./ **Download Tidal**
-> wget https://github.com/dutu/Tidal-Connect-RopieeeXL/blob/main/opttidal.tar.gz
+> wget https://github.com/dutu/Tidal-Connect-RopieeeXL/raw/main/opttidal.tar.gz
 > 
-> wget https://github.com/dutu/Tidal-Connect-RopieeeXL/blob/main/tidalservice.tar.gz
+> wget https://github.com/dutu/Tidal-Connect-RopieeeXL/raw/main/tidalservice.tar.gz
 >
 #2./ **Download Aarch64 package dependencies**
-> wget https://github.com/dutu/Tidal-Connect-RopieeeXL/blob/main/tidallibs.tgz
+> wget https://github.com/dutu/Tidal-Connect-RopieeeXL/raw/main/tidallibs.tgz
 > 
 > 
 ####
