@@ -1,8 +1,10 @@
 # How to clone a RoPieee installation
 
-* Clone the RoPieee SD card
+## Clone the RoPieee SD card
 
-* Reinstall Roon Bridge
+* Clone the existing RoPieee installation to another SD card
+
+## Reinstall Roon Bridge
 
 * Remove a previous Roon installation
 ```shell
