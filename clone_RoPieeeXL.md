@@ -2,7 +2,7 @@
 
 * Clone the RoPieee SD card
 
-## Reinstall Roon Bridge
+* Reinstall Roon Bridge
 
 * Remove a previous Roon installation
 ```shell
