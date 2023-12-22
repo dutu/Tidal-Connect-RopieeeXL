@@ -4,7 +4,7 @@
 
 # Tidal Connect RopieeeXL setup instructions
 
-###### Step by Step
+## Install Tidal Connect required software
 
 * Download Tidal:
 ```shell
@@ -27,6 +27,18 @@ tar -xf /root/tidalservice.tar.gz --overwrite -C /
 ```shell
 tar -xf /root/tidallibs.tgz -C /usr/lib/
 ```
+
+## Install new certificate
+
+* Download the new certificate
+```shell
+cd /tmp
+wget https://raw.githubusercontent.com/dutu/Tidal-Connect-RopieeeXL/main/IfiAudio_ZenStream.dat
+ls -lsa /opt/tidal/id_certificate/
+cp IfiAudio_ZenStream.dat /opt/tidal/id_certificate/
+```
+
+## Configure Tidal Connect service
 
 * Check device: 
 ```shell
@@ -111,7 +123,6 @@ device#0=snd_rpi_hifiberry_digi: HifiBerry Digi HiFi wm8804-spdif-0 (hw:1,0)
 Number of devices = 1
 ```
 
-
 * Copy device name, sample: `snd_rpi_hifiberry_digi: HifiBerry Digi HiFi wm8804-spdif-0 (hw:1,0)`
 
 * Edit file `/etc/systemd/system/tidal.service`
@@ -147,14 +158,6 @@ RestartSec=1
 KillMode=control-group
 [Install]
 WantedBy=multi-user.target
-```
-
-* Download the new certificate
-```shell
-cd /tmp
-wget https://raw.githubusercontent.com/dutu/Tidal-Connect-RopieeeXL/main/IfiAudio_ZenStream.dat
-ls -lsa /opt/tidal/id_certificate/
-cp IfiAudio_ZenStream.dat /opt/tidal/id_certificate/
 ```
 
 * Start the service:
